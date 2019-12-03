@@ -5,6 +5,15 @@
 #nav-bar .col-lg-5{
   background-color: red;
 }
+#main-1 .col-lg-4{
+  height: 150px;
+  background-color: lightblue;
+  margin-bottom: 40px;
+}
+#main-2{
+  background-color: brown;
+  height: 200px;
+}
 /* nav-bar */
 #nav-bar{
   background-color: #2C3E50;
@@ -25,4 +34,34 @@
 #nav-bar ul li{
   display: inline-block;
   padding-right: 20px;
+}
+#nav-bar .col-lg-5{
+  text-align: right;
+}
+#header-bottom{
+  background-color: lightgreen;
+  padding-top: 80px;
+  height: 400px;
+}
+#header-bottom .container{
+  position: relative;
+  height: 100%;
+}
+#header-bottom .col-lg-12{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#main-1 .col-lg-12 {
+  text-align: center;
+}
+#main-2 .row .col-lg-12{
+  text-align: center;
+}
+@media screen and (max-width:992px){
+  #header-bottom .col-lg-12{
+    font-size: 0.8em;
+  }
 }
