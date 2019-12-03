@@ -19,6 +19,7 @@
   background-color: #2C3E50;
   width: 100%;
   position: fixed;
+  z-index: 2
 }
 #nav-bar .row{
   line-height: 70px;
@@ -59,6 +60,16 @@
 }
 #main-2 .row .col-lg-12{
   text-align: center;
+}
+footer .row{
+  text-align: center;
+  color: white;
+}
+#footer-top .row{
+  background-color: #2C3E50;
+}
+#footer-bottom .row{
+  background-color: #1A252F;
 }
 @media screen and (max-width:992px){
   #header-bottom .col-lg-12{
