@@ -32,12 +32,23 @@ body{
   color: white;
   text-decoration: none;
 }
+#nav-bar .col-xs-6 > a{
+  padding: 15px;
+  background-color: #1ABC9C;
+  border-radius: 10px;
+}
+#nav-bar .col-xs-6 > a i{
+  margin-left: 5px;
+}
 #nav-bar li a{
   font-size: 1.50em;
   vertical-align: middle;
 }
 #nav-bar li a:hover{
   color: #1ABC9C;
+}
+#nav-bar p{
+  display: block;
 }
 #nav-bar p a{
   font-size: 2em;
@@ -74,7 +85,7 @@ body{
   width: 15em;
 }
 #header-bottom .col-lg-12 h1{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -92,7 +103,7 @@ body{
   color: #2C3E50;
 }
 #main-1 .row h1{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -102,10 +113,33 @@ body{
 #main-1 .box{
   margin-bottom: 30px;
   width: 100%;
+  position: relative;
+  cursor: pointer;
 }
 #main-1 .box img{
   width: 100%;
   border-radius: 10px;
+}
+#main-1 .cover-green{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(26,188,156,.9);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#main-1 .cover-green .fas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5em;
+}
+#main-1 .box:hover .cover-green{
+  display: block;
 }
 #main-2{
   background-color: #1ABC9C;
@@ -120,7 +154,7 @@ body{
   background-color: white;
 }
 #main-2 .row h1{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -144,18 +178,105 @@ body{
   background-color: white;
   color: black;
 }
+#main-3 .title:first-child{
+  text-align: center;
+}
+#main-3 h1{
+  font-size: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2C3E50;
+}
+#main-3 .glyphicon{
+  color: #2C3E50;
+}
+#main-3 .blu{
+  background-color: #2C3E50;
+}
+#main-3 .row{
+  padding: 60px 0;
+}
+#main-3 .message{
+  padding-bottom: 150px;
+}
+#main-3 form input{
+  width: 100%;
+  padding: 20px;
+  padding-left: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-bottom: 1px solid #E9ECEF;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+#main-3 .main-button button{
+  background-color: #1ABC9C;
+  border: none;
+  padding: 20px 30px;
+  font-size: 1.5em;
+}
+#main-3 .main-button button:hover{
+  background-color: #159A80;
+}
 footer .row{
   text-align: center;
   color: white;
 }
-#footer-top .row{
+#footer-top{
   background-color: #2C3E50;
 }
-#footer-bottom .row{
+#footer-top .row{
+  padding: 70px 0;
+}
+#footer-top .row h2{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+#footer-top .row p {
+  font-size: 1.15em;
+  font-weight: 100;
+}
+#footer-top .row a{
+  margin-right: 10px;
+}
+#footer-top .row a:last-child{
+  margin-right: 0;
+}
+#footer-top .row a i{
+  display: inline-block;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5em;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px;
+}
+#footer-top .row p a{
+  color: #1AB083;
+}
+#footer-top .row p a:hover{
+  color: #117963;
+}
+#footer-top .row a:hover i{
+  background-color: white;
+  color: black;
+}
+#footer-bottom {
   background-color: #1A252F;
+}
+#footer-bottom .row{
+  padding: 30px 0;
+  font-weight: 100;
 }
 @media screen and (max-width:992px){
   #header-bottom .col-lg-12{
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 768px){
+  #footer-top .col-lg-4{
+    padding: 20px 0;
   }
 }
