@@ -271,9 +271,7 @@ footer .row{
   #header-bottom .col-lg-12{
     font-size: 0.8em;
   }
-}
-@media screen and (max-width: 768px){
-  #footer-top .col-lg-4{
-    padding: 20px 0;
+  #footer-top .col-md-4{
+    padding: 10px 0;
   }
 }
